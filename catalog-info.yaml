@@ -1,13 +1,25 @@
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
-  name: local-catalog-root
-  description: Root catalog file for Local RHDH
+  name: user-andre
+  description: Local user for RHDH
 spec:
-  targets:
-    - ./catalog/group-admin.yaml
-    - ./catalog/user-andre.yaml
+  type: url
+  target: https://raw.githubusercontent.com/andrevtg/backstage-dummy-users/refs/heads/main/catalog/user-andre.yaml
   rules:
     - allow:
         - User
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: group-admin
+  description: Local admin group for RHDH
+spec:
+  type: url
+  target: https://raw.githubusercontent.com/andrevtg/backstage-dummy-users/refs/heads/main/catalog/group-admin.yaml
+  rules:
+    - allow:
         - Group
