@@ -5,7 +5,8 @@ metadata:
   description: Root catalog file for Local RHDH
 spec:
   targets:
-    - ./catalog/*.yaml
+    - ./catalog/group-admin.yaml
+    - ./catalog/user-andre.yaml
   rules:
     - allow:
         - User
