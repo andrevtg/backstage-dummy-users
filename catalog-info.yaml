@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: local-catalog-root
+  description: Root catalog file for Local RHDH
+spec:
+  targets:
+    - ./catalog/*.yaml

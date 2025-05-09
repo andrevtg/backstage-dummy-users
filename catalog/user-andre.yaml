@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: andrevtg
+  annotations:
+    backstage.io/managed-by: admin
+spec:
+  profile:
+    displayName: André Fernandes
+    email: eu@aqui.com
+  memberOf: [admin]
+
