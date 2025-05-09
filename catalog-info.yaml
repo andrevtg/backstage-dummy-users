@@ -6,3 +6,6 @@ metadata:
 spec:
   targets:
     - ./catalog/*.yaml
+  rules:
+    - allow:
+        - User
