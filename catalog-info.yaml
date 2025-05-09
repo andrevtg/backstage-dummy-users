@@ -9,3 +9,4 @@ spec:
   rules:
     - allow:
         - User
+        - Group
